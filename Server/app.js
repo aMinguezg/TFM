@@ -16,22 +16,8 @@ const repositoryHumidity = graphDB.getRepository('Humidity') ;
 kafka.turnOnKakfaConsumer('temperature', repositoryTemperature, conversorRDF);
 kafka.turnOnKakfaConsumer('humidity', repositoryHumidity, conversorRDF);
 
-
-//Variables
-app.set('puerto', 3000);
-
-
-//Rutas
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-});
-
-require("./routes/rmediciones.js")(app, conversorRDF);  
-
-//Kafka
-
 //Levantar servidor
-app.listen(app.get('puerto'), () => {
+app.listen(app.get(3000), () => {
   console.log('Ejemplo que escucha en el puerto 3000')
 });
 
