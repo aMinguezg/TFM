@@ -12,9 +12,10 @@ app.set('puerto', 5000);
 //Kafka
 const kakfaClient = new kafka.KafkaClient({kafkaHost: '127.0.0.1:9092'});
 const kafkaProducer = new kafka.Producer(kakfaClient);
+const timeStamp = Date.now();
 const payloads = [
-    { topic: 'TestTopic', messages: `{"temperature": 150, "humidity": 240}` },
-    { topic: 'TestTopic', messages: `{"temperature": 160, "humidity": 230}` }
+    { topic: 'temperature', messages: `{"variableValue": 25, "id": 561648464, "timeStampDevice": ${timeStamp}}`},
+    { topic: 'humidity', messages: `{"variableValue": 45, "id": 1265404467, "timeStampDevice": ${timeStamp}}` }
 ];
 
 const payloads2 = [
@@ -34,7 +35,7 @@ kafkaProducer.on('ready', function (){
   });
 });
 
-kafkaProducer.on('ready', function (){
+/*kafkaProducer.on('ready', function (){
   
     kafkaProducer.send(payloads2, function(){
         console.log('Payloads send');
@@ -46,7 +47,7 @@ kafkaProducer.on('ready', function (){
     kafkaProducer.send(payloads3, function(){
         console.log('Payloads send');
     });
-});
+});*/
 //Levantar servidor
 app.listen(app.get('puerto'), () => {
   console.log('Ejemplo que escucha en el puerto 5000')

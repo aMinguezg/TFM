@@ -1,4 +1,5 @@
 const kafka = require('kafka-node');
+const {RDFMimeType} = require('graphdb').http;
 
 module.exports = {
     turnOnKakfaConsumer: function (topicName, repository, conversorRDF){

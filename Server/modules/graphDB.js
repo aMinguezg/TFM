@@ -1,6 +1,5 @@
 const {ServerClient, ServerClientConfig} = require('graphdb').server;
 const {RepositoryClientConfig, RDFRepositoryClient} = require('graphdb').repository;
-const {RDFMimeType} = require('graphdb').http;
     
 const config = new ServerClientConfig('http://192.168.1.80:7200/', 0, {});
 const server = new ServerClient(config);
