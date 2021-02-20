@@ -6,9 +6,9 @@ module.exports = {
         const kafkaConsumer = new kafka.Consumer(kakfaClient, [ {topic: topicName}]);
 
         kafkaConsumer.on('message', function (message){
-            var rdfXml = conversorRDF.ConvertToRdfXml(message)
+            var rdfXml = conversorRDF.ConvertToRdfXml(topicName, message)
 
-            repository.upload(rdfXml, RDFMimeType.RDF_XML).catch((e) => console.log('Error repositorio'));
+            repository.upload(rdfXml, RDFMimeType.RDF_XML).catch((e) => console.log('Repository Error'));
             console.log('Cargado: ' + rdfXml);
         })
 

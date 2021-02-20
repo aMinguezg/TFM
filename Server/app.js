@@ -13,8 +13,8 @@ const repositoryTemperature = graphDB.getRepository('Temperature') ;
 const repositoryHumidity = graphDB.getRepository('Humidity') ; 
 
 // Turn on kafka consumers
-kafka.turnOnKakfaConsumer('Temperature', repositoryTemperature, conversorRDF);
-kafka.turnOnKakfaConsumer('Humidity', repositoryHumidity, conversorRDF);
+kafka.turnOnKakfaConsumer('temperature', repositoryTemperature, conversorRDF);
+kafka.turnOnKakfaConsumer('humidity', repositoryHumidity, conversorRDF);
 
 
 //Variables
