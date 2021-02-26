@@ -18,6 +18,6 @@ kafka.turnOnKakfaConsumer('humidity', repositoryHumidity, conversorRDF);
 
 //Levantar servidor
 app.listen(app.get(3000), () => {
-  console.log('Ejemplo que escucha en el puerto 3000')
+  console.log('Server at port --> 3000')
 });
 
