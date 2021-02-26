@@ -6,9 +6,6 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json()); 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//Variables
-app.set('puerto', 5000);
-
 //Kafka
 const kakfaClient = new kafka.KafkaClient({kafkaHost: '127.0.0.1:9092'});
 const kafkaProducer = new kafka.Producer(kakfaClient);
@@ -195,7 +192,7 @@ kafkaProducer.on('ready', function (){
 });
 
 //Levantar servidor
-app.listen(app.get('puerto'), () => {
-  console.log('Ejemplo que escucha en el puerto 5000')
+app.listen(app.get(5000), () => {
+  console.log('Server at port --> 5000')
 });
 
