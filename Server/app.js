@@ -1,4 +1,4 @@
-//Importaciones
+//Imports
 const express = require('express')
 const app = express();
 const conversorRDF = require('./modules/conversorRDF.js');
@@ -7,16 +7,17 @@ const kafka = require('./modules/kafka.js');
 const bodyParser = require('body-parser');
 app.use(bodyParser.json()); 
 app.use(bodyParser.urlencoded({ extended: true }));
+const globalConfig = require('./common/global-config.js');
 
 // Get graphDB conections with repositories
-const repositoryTemperature = graphDB.getRepository('Temperature') ; 
-const repositoryHumidity = graphDB.getRepository('Humidity') ; 
+const repositoryTemperature = graphDB.getRepository(globalConfig.graphDB.repositoryTemp) ; 
+const repositoryHumidity = graphDB.getRepository(globalConfig.graphDB.repositoryHum) ; 
 
 // Turn on kafka consumers
-kafka.turnOnKakfaConsumer('temperature', repositoryTemperature, conversorRDF);
-kafka.turnOnKakfaConsumer('humidity', repositoryHumidity, conversorRDF);
+kafka.turnOnKakfaConsumer(globalConfig.kafka.topicTemp, repositoryTemperature, conversorRDF);
+kafka.turnOnKakfaConsumer(globalConfig.kafka.topicHum, repositoryHumidity, conversorRDF);
 
-//Levantar servidor
+//Start server
 app.listen(app.get(3000), () => {
   console.log('Server at port --> 3000')
 });

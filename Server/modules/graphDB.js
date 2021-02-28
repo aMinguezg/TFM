@@ -1,11 +1,13 @@
+const globalConfig = require('./../common/global-config.js');
+
 const {ServerClient, ServerClientConfig} = require('graphdb').server;
 const {RepositoryClientConfig, RDFRepositoryClient} = require('graphdb').repository;
-    
-const config = new ServerClientConfig('http://192.168.1.80:7200/', 0, {});
+
+const config = new ServerClientConfig(globalConfig.graphDB.connection, 0, {});
 const server = new ServerClient(config);
     
-const readTimeout = 30000;
-const writeTimeout = 30000;
+const readTimeout = globalConfig.graphDB.readTimeout;
+const writeTimeout = globalConfig.graphDB.writeTimeout;
 
 module.exports = {
    getRepository: function(repositoryName){   
@@ -15,7 +17,7 @@ module.exports = {
         }
     }).catch(err => console.log(err));
           
-    const repositoryClientConfig = new RepositoryClientConfig([`http://192.168.1.80:7200/repositories/${repositoryName}`], {}, '', readTimeout, writeTimeout);
+    const repositoryClientConfig = new RepositoryClientConfig([`${globalConfig.graphDB.connection}repositories/${repositoryName}`], {}, '', readTimeout, writeTimeout);
     return new RDFRepositoryClient(repositoryClientConfig);
    }
 };

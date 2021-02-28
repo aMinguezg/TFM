@@ -1,4 +1,4 @@
-//Importaciones
+//Imports
 const express = require('express')
 const app = express();
 const kafka = require('kafka-node');
@@ -191,7 +191,7 @@ kafkaProducer.on('ready', function (){
     });
 });
 
-//Levantar servidor
+//Start server
 app.listen(app.get(5000), () => {
   console.log('Server at port --> 5000')
 });
