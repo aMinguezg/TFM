@@ -5,7 +5,7 @@ const {RepositoryClientConfig, RDFRepositoryClient} = require('graphdb').reposit
 
 const config = new ServerClientConfig(globalConfig.graphDB.connection, 0, {});
 const server = new ServerClient(config);
-    
+
 const readTimeout = globalConfig.graphDB.readTimeout;
 const writeTimeout = globalConfig.graphDB.writeTimeout;
 
@@ -15,7 +15,7 @@ module.exports = {
         if (exists) {
             console.log(`Returning the repository --> ${repositoryName}`);
         }
-    }).catch(err => console.log(err));
+    }).catch(err => console.log('No existe el repositorio'));
           
     const repositoryClientConfig = new RepositoryClientConfig([`${globalConfig.graphDB.connection}repositories/${repositoryName}`], {}, '', readTimeout, writeTimeout);
     return new RDFRepositoryClient(repositoryClientConfig);

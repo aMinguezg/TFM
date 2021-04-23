@@ -1,14 +1,14 @@
 version: '3'
+networks:
+  default:
+    external:
+      name: shared-network
 services:
-  # my-app:
-  # image: ${docker-registry}/my-app:1.0
-  # ports:
-  # - 3000:3000
   nodejs: 
     build: 
       context: ./Server 
       dockerfile: Dockerfile 
-    image: node3js 
+    image: node15js 
     container_name: servidor
     ports:
       - 3000:3000
@@ -16,7 +16,7 @@ services:
     build: 
       context: ./Dispositivos 
       dockerfile: Dockerfile 
-    image: dispositivojs 
+    image: dispositivo7js 
     container_name: dispositivos
     ports:
       - 5000:5000

@@ -6,12 +6,19 @@ const {RDFMimeType} = require('graphdb').http;
 module.exports = {
     turnOnKakfaConsumer: function (topicName, repository, conversorRDF){
         const kakfaClient = new kafka.KafkaClient({kafkaHost: globalConfig.kafka.connection});
-        const kafkaConsumer = new kafka.Consumer(kakfaClient, [ {topic: topicName}]);
+
+        const options = {
+            autoCommit: true,
+            autoCommitIntervalMs: 5000
+        };
+        const kafkaConsumer = new kafka.Consumer(kakfaClient, [ {topic: topicName}], options);
+
+        kafkaConsumer.setMaxListeners(11);
 
         kafkaConsumer.on('message', function (message){
             var rdfXml = conversorRDF.ConvertToRdfXml(topicName, message)
 
-            repository.upload(rdfXml, RDFMimeType.RDF_XML).catch((e) => console.log('Repository Error'));
+            //repository.upload(rdfXml, RDFMimeType.RDF_XML).catch((e) => console.log('Repository Error'));
             console.log('Cargado: ' + rdfXml);
         })
 
