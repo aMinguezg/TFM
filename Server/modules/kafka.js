@@ -1,10 +1,11 @@
 const globalConfig = require('./../common/global-config.js');
 
 const kafka = require('kafka-node');
+const conversorRDF = require('./../modules/conversorRDF.js');
 const {RDFMimeType} = require('graphdb').http;
 
 module.exports = {
-    turnOnKakfaConsumer: function (topicName, repository, conversorRDF){
+    loadDataWithKakfaConsumer: function (topicName, repository){
         const kakfaClient = new kafka.KafkaClient({kafkaHost: globalConfig.kafka.connection});
 
         const options = {
@@ -17,8 +18,7 @@ module.exports = {
 
         kafkaConsumer.on('message', function (message){
             var rdfXml = conversorRDF.ConvertToRdfXml(topicName, message)
-
-            //repository.upload(rdfXml, RDFMimeType.RDF_XML).catch((e) => console.log('Repository Error'));
+            repository.upload(rdfXml, RDFMimeType.RDF_XML).catch((e) => console.log('Repository Error'));
             console.log('Cargado: ' + rdfXml);
         })
 

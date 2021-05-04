@@ -8,7 +8,7 @@ services:
     build: 
       context: ./Server 
       dockerfile: Dockerfile 
-    image: node15js 
+    image: nodejs 
     container_name: servidor
     ports:
       - 3000:3000
@@ -16,7 +16,7 @@ services:
     build: 
       context: ./Dispositivos 
       dockerfile: Dockerfile 
-    image: dispositivo7js 
+    image: dispositivojs 
     container_name: dispositivos
     ports:
       - 5000:5000

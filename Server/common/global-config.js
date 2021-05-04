@@ -1,6 +1,6 @@
 module.exports = {
     graphDB: {
-        connection: 'graphdb:7200/',
+        connection: 'http://graphdb:7200/',
         readTimeout: 30000,
         writeTimeout: 30000,
         repositoryTemp: 'Temperature',

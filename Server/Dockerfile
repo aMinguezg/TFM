@@ -15,14 +15,14 @@ RUN npm install express
 # RUN npm ci --only=production
 RUN npm install body-parser -s
 
-RUN npm install mongoose -s
-
 RUN npm install kafka-node -s
 
 RUN npm install graphdb -s
 
+RUN npm install @innotrade/enapso-graphdb-client -s
 # Bundle app source
 COPY . .
 
 
 CMD [ "node", "app.js" ]
+
