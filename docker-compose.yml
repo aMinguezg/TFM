@@ -1,0 +1,22 @@
+version: '3'
+networks:
+  default:
+    external:
+      name: shared-network
+services:
+  nodejs: 
+    build: 
+      context: ./Server 
+      dockerfile: Dockerfile 
+    image: nodejs 
+    container_name: servidor
+    ports:
+      - 3000:3000
+  dispositivojs: 
+    build: 
+      context: ./Dispositivos 
+      dockerfile: Dockerfile 
+    image: dispositivojs 
+    container_name: dispositivos
+    ports:
+      - 5000:5000

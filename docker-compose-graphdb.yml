@@ -1,0 +1,13 @@
+version: '3'
+networks:
+  default:
+    external:
+      name: shared-network
+services:
+  graphdb:
+      container_name: graphdb
+      image: khaller/graphdb-free
+      ports:
+      - 7200:7200
+      volumes:
+      - ./graphdb-data:/opt/graphdb/home

@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //Kafka
-const kakfaClient = new kafka.KafkaClient({kafkaHost: '127.0.0.1:9092'});
+const kakfaClient = new kafka.KafkaClient({kafkaHost: 'tfm_kafka-server1_1:9092'});
 const kafkaProducer = new kafka.Producer(kakfaClient);
 
 const payloadTemperature = [

@@ -1,0 +1,66 @@
+[INFO ] 2021-05-04 17:14:24,271 [main | c.o.g.Config] Using 'jar:file:/opt/graphdb/dist/lib/graphdb-application-common-9.3.0.jar!/com/ontotext/graphdb/logback-ee.xml' as logback's configuration file for graphdb
+[INFO ] 2021-05-04 17:14:25,606 [main | c.o.g.s.GraphDB] Starting GraphDB in workbench mode.
+[INFO ] 2021-05-04 17:14:46,378 [main | c.o.g.Config] GraphDB Home directory: /opt/graphdb/home
+[INFO ] 2021-05-04 17:14:46,384 [main | c.o.g.Config] GraphDB Config directory: /opt/graphdb/home/conf
+[INFO ] 2021-05-04 17:14:46,388 [main | c.o.g.Config] GraphDB Data directory: /opt/graphdb/home/data
+[INFO ] 2021-05-04 17:14:46,391 [main | c.o.g.Config] GraphDB Work directory: /opt/graphdb/home/work
+[INFO ] 2021-05-04 17:14:46,391 [main | c.o.g.Config] GraphDB Logs directory: /opt/graphdb/home/logs
+[INFO ] 2021-05-04 17:15:01,021 [main | c.o.g.s.GraphDB] Started GraphDB in workbench mode at port 7200.
+[INFO ] 2021-05-04 17:15:18,810 [Thread-2 | c.o.g.s.GraphDB] Stopping GraphDB.
+[INFO ] 2021-05-04 17:16:00,068 [main | c.o.g.Config] Using 'jar:file:/opt/graphdb/dist/lib/graphdb-application-common-9.3.0.jar!/com/ontotext/graphdb/logback-ee.xml' as logback's configuration file for graphdb
+[INFO ] 2021-05-04 17:16:01,306 [main | c.o.g.s.GraphDB] Starting GraphDB in workbench mode.
+[INFO ] 2021-05-04 17:16:22,161 [main | c.o.g.Config] GraphDB Home directory: /opt/graphdb/home
+[INFO ] 2021-05-04 17:16:22,176 [main | c.o.g.Config] GraphDB Config directory: /opt/graphdb/home/conf
+[INFO ] 2021-05-04 17:16:22,178 [main | c.o.g.Config] GraphDB Data directory: /opt/graphdb/home/data
+[INFO ] 2021-05-04 17:16:22,180 [main | c.o.g.Config] GraphDB Work directory: /opt/graphdb/home/work
+[INFO ] 2021-05-04 17:16:22,180 [main | c.o.g.Config] GraphDB Logs directory: /opt/graphdb/home/logs
+[INFO ] 2021-05-04 17:16:39,682 [main | c.o.g.s.GraphDB] Started GraphDB in workbench mode at port 7200.
+[INFO ] 2021-05-04 17:59:47,287 [Thread-2 | c.o.g.s.GraphDB] Stopping GraphDB.
+[INFO ] 2021-05-04 18:00:07,684 [main | c.o.g.Config] Using 'jar:file:/opt/graphdb/dist/lib/graphdb-application-common-9.3.0.jar!/com/ontotext/graphdb/logback-ee.xml' as logback's configuration file for graphdb
+[INFO ] 2021-05-04 18:00:09,445 [main | c.o.g.s.GraphDB] Starting GraphDB in workbench mode.
+[INFO ] 2021-05-04 18:00:27,874 [main | c.o.g.Config] GraphDB Home directory: /opt/graphdb/home
+[INFO ] 2021-05-04 18:00:27,881 [main | c.o.g.Config] GraphDB Config directory: /opt/graphdb/home/conf
+[INFO ] 2021-05-04 18:00:27,884 [main | c.o.g.Config] GraphDB Data directory: /opt/graphdb/home/data
+[INFO ] 2021-05-04 18:00:27,885 [main | c.o.g.Config] GraphDB Work directory: /opt/graphdb/home/work
+[INFO ] 2021-05-04 18:00:27,885 [main | c.o.g.Config] GraphDB Logs directory: /opt/graphdb/home/logs
+[INFO ] 2021-05-04 18:00:39,416 [main | c.o.g.s.GraphDB] Started GraphDB in workbench mode at port 7200.
+[INFO ] 2021-05-04 18:49:49,867 [Thread-2 | c.o.g.s.GraphDB] Stopping GraphDB.
+[INFO ] 2021-05-04 18:50:18,422 [main | c.o.g.Config] Using 'jar:file:/opt/graphdb/dist/lib/graphdb-application-common-9.3.0.jar!/com/ontotext/graphdb/logback-ee.xml' as logback's configuration file for graphdb
+[INFO ] 2021-05-04 18:50:19,733 [main | c.o.g.s.GraphDB] Starting GraphDB in workbench mode.
+[INFO ] 2021-05-04 18:50:36,655 [main | c.o.g.Config] GraphDB Home directory: /opt/graphdb/home
+[INFO ] 2021-05-04 18:50:36,662 [main | c.o.g.Config] GraphDB Config directory: /opt/graphdb/home/conf
+[INFO ] 2021-05-04 18:50:36,663 [main | c.o.g.Config] GraphDB Data directory: /opt/graphdb/home/data
+[INFO ] 2021-05-04 18:50:36,667 [main | c.o.g.Config] GraphDB Work directory: /opt/graphdb/home/work
+[INFO ] 2021-05-04 18:50:36,668 [main | c.o.g.Config] GraphDB Logs directory: /opt/graphdb/home/logs
+[INFO ] 2021-05-04 18:50:47,556 [main | c.o.g.s.GraphDB] Started GraphDB in workbench mode at port 7200.
+[INFO ] 2021-05-04 18:51:01,995 [http-nio-7200-exec-1 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: 1143aca1-35e0-47cb-8baa-2090461229c1 Request for query 3392903 is finished
+[INFO ] 2021-05-04 18:51:02,010 [http-nio-7200-exec-2 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: 691287f1-ed7b-4d10-a12a-191d3bbd1693 Request for query 3392903 is finished
+[INFO ] 2021-05-04 18:52:55,808 [http-nio-7200-exec-3 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: b90d52d0-3309-400e-9dd0-f8da614f2044 Request for query 3392903 is finished
+[INFO ] 2021-05-04 18:52:55,821 [http-nio-7200-exec-4 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: ee162079-8b2c-4370-954a-8de2887b02e5 Request for query 3392903 is finished
+[INFO ] 2021-05-04 18:54:05,353 [http-nio-7200-exec-6 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: 0100bae3-1ed2-4b39-bd7a-324d8f890665 Request for query 3392903 is finished
+[INFO ] 2021-05-04 18:54:05,364 [http-nio-7200-exec-5 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: a843c5ea-1c08-4930-92b0-f0ca972716c2 Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:01:58,600 [http-nio-7200-exec-7 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: 62d30f3e-c314-407c-a0ab-79d73f6a82cc Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:01:58,612 [http-nio-7200-exec-8 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: 717252f1-023e-4a00-965d-3d7181c13dff Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:04:46,064 [http-nio-7200-exec-10 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: 97336c39-46b3-4f1f-8cd0-adfbd1a84564 Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:04:46,089 [http-nio-7200-exec-9 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: 0caefaf5-b791-4a46-90bf-261fe353a044 Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:07:51,671 [http-nio-7200-exec-1 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: 73776723-10ac-4d01-9777-3f0844fe807b Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:07:51,686 [http-nio-7200-exec-2 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: f03de1e8-6cef-4bf4-a19b-ad7be807d969 Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:09:51,680 [http-nio-7200-exec-4 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: f8b5b9ea-7462-43b0-9830-4f4651edf34b Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:09:51,695 [http-nio-7200-exec-3 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: e15ffa0a-411b-4072-8323-c6ee2a500b8c Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:10:52,931 [http-nio-7200-exec-5 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: 6fc66582-6f77-4523-94fa-23f28bec287f Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:10:52,938 [http-nio-7200-exec-6 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: e71927c9-20af-4bc6-b551-9a017078b42d Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:16:43,904 [http-nio-7200-exec-7 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: c18baa0b-8a7d-40c4-8986-d107f0c9db04 Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:16:43,909 [http-nio-7200-exec-8 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: f9f13f3a-0fb2-49a6-94a2-745c21ed0a7e Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:17:55,497 [http-nio-7200-exec-10 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: e4a1332f-9743-48b5-9d04-630edde545f5 Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:17:55,499 [http-nio-7200-exec-9 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: 65fbe800-92d3-421c-9315-f75eccdc3469 Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:20:12,055 [http-nio-7200-exec-2 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: d171d084-a598-463e-b350-adbc58b1a3b4 Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:20:12,060 [http-nio-7200-exec-1 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: acfadff4-e3b2-48ea-92c4-87ff781e833e Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:21:33,474 [http-nio-7200-exec-3 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: d1e9acfb-38f0-4607-ad98-fd51eac5e8a9 Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:21:33,482 [http-nio-7200-exec-4 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: 95bb996a-e6f1-49e6-951d-733125274d74 Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:22:36,603 [http-nio-7200-exec-6 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: b51a244f-207e-43d7-a3a7-78631e62346a Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:22:36,616 [http-nio-7200-exec-5 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: 7b59fa33-6ec8-414a-84a8-8f0e49c3c30c Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:30:01,736 [http-nio-7200-exec-8 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: 40d76da5-9809-462d-9a5f-ee917b33418f Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:30:01,736 [http-nio-7200-exec-7 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: 404a0a06-de03-4316-aa6d-6564300346ff Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:31:32,390 [http-nio-7200-exec-10 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: 4a7505a6-7df5-4b81-8ad7-a630b381acad Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:31:32,394 [http-nio-7200-exec-9 | o.e.r.h.s.r.TupleQueryResultView] X-Request-Id: 16bbe3b6-b716-4687-b917-e84771df8dce Request for query 3392903 is finished
+[INFO ] 2021-05-04 19:44:26,100 [Thread-2 | c.o.g.s.GraphDB] Stopping GraphDB.
