@@ -1,2 +1,0 @@
-[INFO ] 2021-05-04 18:51:01,397 [http-nio-7200-exec-1 | c.o.t.r.RequestURLInterceptor] X-Request-Id: 1143aca1-35e0-47cb-8baa-2090461229c1 The hostname used in the request points to one of the machine IPs, use it: 172.20.0.4
-[INFO ] 2021-05-04 18:51:01,403 [http-nio-7200-exec-1 | c.o.t.r.RequestURLInterceptor] X-Request-Id: 1143aca1-35e0-47cb-8baa-2090461229c1 Discovered base URL for repositories: http://172.20.0.4:7200
