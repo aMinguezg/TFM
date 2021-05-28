@@ -11,8 +11,6 @@ const {RDFMimeType} = require('graphdb').http;
 const config = new ServerClientConfig('http://localhost:7200/', 0, {});
 const server = new ServerClient(config);
 
-
-
 app.get('/mediciones', function(req, res) {
     server.getRepositoryIDs().then(ids => {
         res.send(ids);

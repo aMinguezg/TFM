@@ -2,9 +2,8 @@
 const express = require('express')
 const app = express();
 const kafka = require('kafka-node');
-const bodyParser = require('body-parser');
-app.use(bodyParser.json()); 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json()); 
+app.use(express.urlencoded({ extended: true }));
 
 //Kafka
 const kakfaClient = new kafka.KafkaClient({kafkaHost: 'tfm_kafka-server1_1:9092'});

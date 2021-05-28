@@ -35,11 +35,11 @@ module.exports = {
             writeDataInGraphDB(repositoryName);
         }
         else{
-            console.log(`No existe el repositorio ${repositoryName}`);
+            console.log(`Repository doesn't exist: ${repositoryName}`);
             const configRepository = new RepositoryConfig(repositoryName, '', new Map(), '',  repositoryName, RepositoryType.FREE);
             const serverClientDB = new GraphDBServerClient(config);
             serverClientDB.createRepository(configRepository).then(() => {
-                console.log(`Repositorio creado: ${repositoryName}`);
+                console.log(`Repository created: ${repositoryName}`);
                 writeDataInGraphDB(repositoryName);
             });
         }

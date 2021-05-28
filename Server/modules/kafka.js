@@ -19,7 +19,7 @@ module.exports = {
         kafkaConsumer.on('message', function (message){
             var rdfXml = conversorRDF.ConvertToRdfXml(topicName, message)
             repository.upload(rdfXml, RDFMimeType.RDF_XML).catch((e) => console.log('Repository Error'));
-            console.log('Cargado: ' + rdfXml);
+            console.log('Loaded: ' + rdfXml);
         })
 
         kafkaConsumer.on('error', function (message){

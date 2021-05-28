@@ -3,9 +3,8 @@ const express = require('express')
 const app = express();
 
 const graphDB = require('./modules/graphDB.js')
-const bodyParser = require('body-parser');
-app.use(bodyParser.json()); 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json()); 
+app.use(express.urlencoded({ extended: true }));
 const globalConfig = require('./common/global-config.js');
 
 
